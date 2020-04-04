@@ -176,9 +176,7 @@ class ScrollBar extends Component {
       isActiveHorizontalScroll
     } = this.state;
     return (
-      <div style={{
-     
-      }} className={`scroll-bar-container ${this.props.className}`.trim()}>
+      <div className={`scroll-bar-container ${this.props.className}`.trim()}>
         <div className="scroll-content" onScroll={this.onScroll} ref={this.scrollContainer}>
           <div className="content">
           {this.props.children}
